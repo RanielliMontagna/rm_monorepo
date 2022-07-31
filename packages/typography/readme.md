@@ -1,10 +1,10 @@
-# Theme Provider
+# Typography
 
-Baseado no theme provider do **styled-components**, feito para estilizar meu design system.
+Componente utilizado para padronizar tamanhos e fontes utilizados pelo projeto.
 
 ## Pacotes utilizados
 
-Para criação e utilização do theme provider foram necessárias a utilização das tecnologias e ferramentas descritas abaixo:
+Para criação e utilização da typography foram necessárias a utilização das tecnologias e ferramentas descritas abaixo:
 
 - [React](https://pt-br.reactjs.org/): É uma ferramenta de código aberto para criar componentes de interface do usuário e páginas isoladamente. Ele simplifica o desenvolvimento, o teste e a documentação da interface do usuário.
 - [Typescript](https://www.typescriptlang.org/): Linguagem fortemente tipada baseada em JavaScript.
