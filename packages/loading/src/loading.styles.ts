@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Backdrop = styled.div`
   position: fixed;
@@ -27,8 +27,7 @@ export const CircularLoading = styled.div`
     border: 5px solid;
     border-radius: 50%;
     animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: ${({ theme }) => theme?.cores?.primaria} transparent
-      transparent transparent;
+    border-color: ${({ theme }) => theme?.cores?.primaria} transparent transparent transparent;
   }
   &.lds-ring div:nth-child(1) {
     animation-delay: -0.45s;

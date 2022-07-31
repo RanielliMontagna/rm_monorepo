@@ -1,8 +1,8 @@
-import React from "react";
-import { ThemeProvider as ThemeProviderSC } from "styled-components";
-import { defaultTheme } from "./defaultTheme";
+import React, { memo } from 'react';
+import { ThemeProvider as ThemeProviderSC } from 'styled-components';
+import { defaultTheme } from './defaultTheme';
 
-import { IThemeProvider } from "./themeProvider.types";
+import type { IThemeProvider } from './themeProvider.types';
 
 export const ThemeProvider = ({ children, theme }: IThemeProvider) => {
   return (
@@ -17,4 +17,4 @@ export const ThemeProvider = ({ children, theme }: IThemeProvider) => {
   );
 };
 
-export default ThemeProvider;
+export default memo(ThemeProvider);

@@ -2,11 +2,11 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
-import Loading from './loading';
+import Typography from './typography';
 
-describe('Loading', () => {
+describe('Typography', () => {
   test('renders correctly', () => {
-    const tree = renderer.create(<Loading />).toJSON();
+    const tree = renderer.create(<Typography>teste</Typography>).toJSON();
 
     expect(tree).toMatchSnapshot();
   });

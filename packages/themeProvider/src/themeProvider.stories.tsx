@@ -1,9 +1,9 @@
-import React from "react";
-import ThemeProvider from "./themeProvider";
+import React from 'react';
+import ThemeProvider from './themeProvider';
 
 export default {
   component: ThemeProvider,
-  title: "Design System/ThemeProvider",
+  title: 'Design System/ThemeProvider',
 };
 
 export const padrao = () => (

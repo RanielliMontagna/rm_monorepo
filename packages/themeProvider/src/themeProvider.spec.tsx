@@ -2,11 +2,11 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
-import Loading from './loading';
+import ThemeProvider from './themeProvider';
 
-describe('Loading', () => {
+describe('ThemeProvider', () => {
   test('renders correctly', () => {
-    const tree = renderer.create(<Loading />).toJSON();
+    const tree = renderer.create(<ThemeProvider />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });

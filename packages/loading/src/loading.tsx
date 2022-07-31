@@ -1,5 +1,5 @@
-import React from "react";
-import { Backdrop, CircularLoading } from "./loading.styles";
+import React, { memo } from 'react';
+import { Backdrop, CircularLoading } from './loading.styles';
 
 const Loading = () => {
   return (
@@ -14,4 +14,4 @@ const Loading = () => {
   );
 };
 
-export default Loading;
+export default memo(Loading);

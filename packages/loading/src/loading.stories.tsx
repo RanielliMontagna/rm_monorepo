@@ -1,10 +1,10 @@
-import React from "react";
-import ThemeProvider from "../../themeProvider/src/themeProvider";
-import Loading from "./loading";
+import React from 'react';
+import ThemeProvider from '../../themeProvider/src/themeProvider';
+import Loading from './loading';
 
 export default {
   component: Loading,
-  title: "Design System/Loading",
+  title: 'Design System/Loading',
 };
 
 export const padrao = () => (

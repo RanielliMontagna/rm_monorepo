@@ -1,14 +1,7 @@
-import { PropsWithChildren } from "react";
+import { PropsWithChildren } from 'react';
 
-export interface IFontes {
-  xs: string;
-  sm: string;
-  md: string;
-  lg: string;
-  xl: string;
-}
-
-export interface ICores {
+export type IFontes = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+export interface ICoresPrincipais {
   primaria: string;
   secundaria: string;
   terciaria: string;
@@ -20,11 +13,12 @@ export interface ICoresUtilitarias {
   danger: string;
 }
 
+export type ICores = ICoresPrincipais | ICoresUtilitarias;
 export interface IThemeProvider extends PropsWithChildren {
   theme?: {
     fontes: IFontes;
     theme: {
-      cores: ICores;
+      cores: ICoresPrincipais;
       coresUtilitarias: ICoresUtilitarias;
       coresExtras: Object;
     };
