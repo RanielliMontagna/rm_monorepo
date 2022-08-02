@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0-alpha",
   "description": "Storybook",
-  "author": "Mark <mark@remarkablemark.org>",
+  "author": "Ranielli Montagna <raniellimontagna@hotmail.com>",
   "scripts": {
     "build": "build-storybook",
     "clean": "rm -rf storybook-static",
@@ -11,9 +11,6 @@
     "lint:fix": "yarn lint --fix",
     "start": "yarn storybook",
     "storybook": "start-storybook -p 6006"
-  },
-  "dependencies": {
-    "@remarkable/button": "1.0.0-alpha"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
