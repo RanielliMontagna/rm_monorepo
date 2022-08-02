@@ -161,3 +161,8 @@ yarn test --scope=example-a
 ## License
 
 [MIT](LICENSE)
+
+## Author
+
+Feito com carinho, by [Ranielli Montagna](https://www.ranimontagna.com/). </br>
+Baseado no projeto [remarkablemark](https://github.com/remarkablemark) / [lerna-template](https://github.com/remarkablemark/lerna-template)
