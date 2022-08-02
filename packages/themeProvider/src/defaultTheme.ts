@@ -25,6 +25,8 @@ export const defaultTheme = {
   },
   coresUtilitarias: { success, warning, danger },
   coresExtras: {
+    branco: '#FFFFFF',
+    preto: '#22252C',
     cinzaClaro,
     cinzaEscuro,
   },

@@ -1,8 +1,22 @@
-.log
-.DS_Store
-.jest-*
-.npmrc
-lib
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
 node_modules
-__snapshots__
-lerna-debug.log
+.pnp
+.pnp.js
+
+# testing
+coverage
+
+# build
+lib
+storybook-static
+
+# misc
+.DS_Store
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+*.swp

@@ -11,4 +11,4 @@ const Typography: React.FC<TypographyProps> = ({ children, style, className, ...
   );
 };
 
-export default React.memo(Typography);
+export default Typography;

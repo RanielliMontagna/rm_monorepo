@@ -1,75 +1,33 @@
 import styled, { css } from 'styled-components';
+import { getColor } from '../../utils';
 
 import type { TypographyProps } from './typography.types';
-
-export const getColor = ({ color }: { color?: string }) => {
-  switch (color) {
-    case 'primary':
-      return css`
-        ${({ theme }) => theme.cores.primaria};
-      `;
-    case 'secondary':
-      return css`
-        ${({ theme }) => theme.cores.secundaria};
-      `;
-    case 'terciary':
-      return css`
-        ${({ theme }) => theme.cores.terciaria};
-      `;
-    case 'success':
-      return css`
-        ${({ theme }) => theme.coresUtilitarias.success};
-      `;
-    case 'warning':
-      return css`
-        ${({ theme }) => theme.coresUtilitarias.warning};
-      `;
-    case 'danger':
-      return css`
-        ${({ theme }) => theme.coresUtilitarias.danger};
-      `;
-    case 'darkGray':
-      return css`
-        ${({ theme }) => theme.coresExtras.cinzaClaro};
-      `;
-    case 'lightGray':
-      return css`
-        ${({ theme }) => theme.coresExtras.cinzaEscuro};
-      `;
-    case 'darkBlue':
-      return css`
-        ${({ theme }) => theme.coresExtras.pretoAppBar};
-      `;
-    default:
-      return css``;
-  }
-};
 
 const getSize = ({ size }: Pick<TypographyProps, 'size'>) => {
   switch (size) {
     case 'xs':
       return css`
-        font-size: ${({ theme }) => theme.fontes?.xs};
+        font-size: ${({ theme }) => theme?.fontes?.xs};
       `;
     case 'sm':
       return css`
-        font-size: ${({ theme }) => theme.fontes?.sm};
+        font-size: ${({ theme }) => theme?.fontes?.sm};
       `;
     case 'md':
       return css`
-        font-size: ${({ theme }) => theme.fontes?.md};
+        font-size: ${({ theme }) => theme?.fontes?.md};
       `;
     case 'lg':
       return css`
-        font-size: ${({ theme }) => theme.fontes?.lg};
+        font-size: ${({ theme }) => theme?.fontes?.lg};
       `;
     case 'xl':
       return css`
-        font-size: ${({ theme }) => theme.fontes?.xl};
+        font-size: ${({ theme }) => theme?.fontes?.xl};
       `;
     default:
       return css`
-        font-size: ${({ theme }) => theme.fontes?.md};
+        font-size: ${({ theme }) => theme?.fontes?.md};
       `;
   }
 };

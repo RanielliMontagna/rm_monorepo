@@ -1,6 +1,7 @@
 import { PropsWithChildren } from 'react';
 
 export type IFontes = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+
 export interface ICoresPrincipais {
   primaria: string;
   secundaria: string;
@@ -14,13 +15,14 @@ export interface ICoresUtilitarias {
 }
 
 export type ICores = ICoresPrincipais | ICoresUtilitarias;
-export interface IThemeProvider extends PropsWithChildren {
-  theme?: {
-    fontes: IFontes;
-    theme: {
-      cores: ICoresPrincipais;
-      coresUtilitarias: ICoresUtilitarias;
-      coresExtras: Object;
+export interface IThemeProvider
+  extends PropsWithChildren<{
+    theme?: {
+      fontes: IFontes;
+      theme: {
+        cores: ICoresPrincipais;
+        coresUtilitarias: ICoresUtilitarias;
+        coresExtras: Object;
+      };
     };
-  };
-}
+  }> {}

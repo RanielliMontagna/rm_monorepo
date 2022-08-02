@@ -1,10 +1,9 @@
-import React, { memo } from 'react';
 import { ThemeProvider as ThemeProviderSC } from 'styled-components';
 import { defaultTheme } from './defaultTheme';
 
 import type { IThemeProvider } from './themeProvider.types';
 
-export const ThemeProvider = ({ children, theme }: IThemeProvider) => {
+export const ThemeProvider = ({ theme, children }: IThemeProvider) => {
   return (
     <ThemeProviderSC
       theme={{
@@ -17,4 +16,4 @@ export const ThemeProvider = ({ children, theme }: IThemeProvider) => {
   );
 };
 
-export default memo(ThemeProvider);
+export default ThemeProvider;
