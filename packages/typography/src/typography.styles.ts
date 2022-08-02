@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { getColor } from '../../utils';
+import { getColor } from './../../utils/src/styles/getColor';
 
 import type { TypographyProps } from './typography.types';
 

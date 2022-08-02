@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 import type { IFontes } from '../../themeProvider/src/themeProvider.types';
-import { getColor, getContrastColor } from '../../utils/src';
+
+import { getColor } from './../../utils/src/styles/getColor';
+import { getContrastColor } from './../../utils/src/styles/getContrastColor';
 
 export const Button = styled.button<{ size: IFontes; fullWidth: boolean; color?: string }>`
   padding: 0px 16px 0 10px;
