@@ -15,6 +15,7 @@
     "@mui/material": "^5.9.3",
     "react": "17 || 18",
     "react-hook-form": "^7.34.0",
+    "react-icons": "^4.4.0",
     "react-number-format": "^4.9.3",
     "styled-components": "4 || 5"
   },
