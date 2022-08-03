@@ -1,6 +1,6 @@
 {
   "name": "@rm-monorepo/button",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "Button",
   "author": "Ranielli Montagna <raniellimontagna@hotmail.com>",
   "main": "lib/index.js",

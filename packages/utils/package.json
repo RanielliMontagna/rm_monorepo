@@ -1,6 +1,6 @@
 {
   "name": "@rm-monorepo/utils",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "Utils",
   "author": "Ranielli Montagna <raniellimontagna@hotmail.com>",
   "main": "lib/index.js",
