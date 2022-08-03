@@ -19,5 +19,8 @@
     "@storybook/react": "^6.3.8",
     "babel-loader": "^8.2.2"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT"
 }
