@@ -19,10 +19,8 @@ export interface IThemeProvider
   extends PropsWithChildren<{
     theme?: {
       fontes?: IFontes;
-      theme: {
-        cores: ICoresPrincipais;
-        coresUtilitarias?: ICoresUtilitarias;
-        coresExtras?: Object;
-      };
+      cores: ICoresPrincipais;
+      coresUtilitarias?: ICoresUtilitarias;
+      coresExtras?: Object;
     };
   }> {}
