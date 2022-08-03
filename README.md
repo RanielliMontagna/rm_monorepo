@@ -1,9 +1,4 @@
-# Projeto base para criação de um design system utilizando monorepo em react
-
-## Prerequisites
-
-[Node.js](https://nodejs.org/):
-[Yarn 1](https://classic.yarnpkg.com/):
+# Ranielli Montagna - Monorepo Próprio
 
 ### Instalação
 

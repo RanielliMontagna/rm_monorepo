@@ -5,7 +5,7 @@ import { axe } from 'jest-axe';
 import Loading from '../src';
 import ThemeProvider from '../../themeProvider/src';
 
-it('is accessible', async () => {
+it('is accessible with provider', async () => {
   const { container } = render(
     <ThemeProvider>
       <Loading />

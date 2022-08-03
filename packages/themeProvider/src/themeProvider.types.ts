@@ -18,11 +18,11 @@ export type ICores = ICoresPrincipais | ICoresUtilitarias;
 export interface IThemeProvider
   extends PropsWithChildren<{
     theme?: {
-      fontes: IFontes;
+      fontes?: IFontes;
       theme: {
         cores: ICoresPrincipais;
-        coresUtilitarias: ICoresUtilitarias;
-        coresExtras: Object;
+        coresUtilitarias?: ICoresUtilitarias;
+        coresExtras?: Object;
       };
     };
   }> {}
