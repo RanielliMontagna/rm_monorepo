@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.1](https://github.com/RanielliMontagna/rm_monorepo/compare/@rm-monorepo/theme-provider@1.3.0...@rm-monorepo/theme-provider@1.3.1) (2022-08-03)
+
+### Bug Fixes
+
+- **themeProvider:** ajusta tipagem do theme-provider ([863efd6](https://github.com/RanielliMontagna/rm_monorepo/commit/863efd6a662de97303d4e08662f0608380d85f63))
+
 # 1.3.0 (2022-08-03)
 
 ### Features
