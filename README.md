@@ -99,12 +99,6 @@ Lint a single package:
 yarn lint --scope=<package-name>
 ```
 
-For example:
-
-```sh
-yarn lint --scope=example-a
-```
-
 ### `yarn lint:fix`
 
 Fix lint errors for all packages:
@@ -117,12 +111,6 @@ Fix lint errors for a single package:
 
 ```sh
 yarn lint:fix --scope=<package-name>
-```
-
-For example:
-
-```sh
-yarn lint:fix --scope=example-a
 ```
 
 ### `yarn storybook`
@@ -145,12 +133,6 @@ Run tests for a single package:
 
 ```sh
 yarn test --scope=<package-name>
-```
-
-For example:
-
-```sh
-yarn test --scope=example-a
 ```
 
 ## License
