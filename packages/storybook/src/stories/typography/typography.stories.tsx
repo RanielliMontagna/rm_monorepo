@@ -1,4 +1,4 @@
-import Typography from '../../../../typography/src/typography';
+import { Typography } from '../../../../typography/src/typography';
 import ThemeProvider from '../../../../themeProvider/src/themeProvider';
 
 export default {

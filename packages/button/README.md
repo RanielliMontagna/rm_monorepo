@@ -3,7 +3,7 @@
 ## Usage
 
 ```tsx
-import Button from '@rm-monorepo/button';
+import { Button } from '@rm-monorepo/button';
 
 <Button>Text</Button>;
 ```

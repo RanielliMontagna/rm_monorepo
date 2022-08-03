@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { axe } from 'jest-axe';
 
-import Button from '../src';
+import { Button } from '../src';
 
 it('is accessible', async () => {
   const { container } = render(<Button>text</Button>);
