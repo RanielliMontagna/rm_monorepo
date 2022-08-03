@@ -1,6 +1,6 @@
 {
   "name": "storybook",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "description": "Storybook",
   "author": "Ranielli Montagna <raniellimontagna@hotmail.com>",
   "scripts": {
