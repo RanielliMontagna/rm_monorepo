@@ -1,5 +1,4 @@
-import React from 'react';
-import ThemeProvider from '../../../../themeProvider';
+import ThemeProvider from '../../../../themeProvider/src/themeProvider';
 
 export default {
   component: ThemeProvider,

@@ -1,5 +1,6 @@
-import Loading from '../../../../loading';
-import ThemeProvider from '../../../../themeProvider';
+import React from 'react';
+import Loading from '../../../../loading/src/loading';
+import ThemeProvider from '../../../../themeProvider/src/themeProvider';
 
 export default {
   component: Loading,

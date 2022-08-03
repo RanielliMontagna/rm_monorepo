@@ -1,5 +1,5 @@
 import { useForm } from 'react-hook-form';
-import { CurrencyField } from '../../../../fields';
+import { CurrencyField } from '../../../../fields/src/currencyField/currencyField';
 
 export default {
   component: CurrencyField,

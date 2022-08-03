@@ -1,5 +1,5 @@
-import Typography from '../../../../typography/src';
-import ThemeProvider from '../../../../themeProvider';
+import Typography from '../../../../typography/src/typography';
+import ThemeProvider from '../../../../themeProvider/src/themeProvider';
 
 export default {
   component: Typography,

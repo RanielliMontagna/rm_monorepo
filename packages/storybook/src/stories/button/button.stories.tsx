@@ -1,5 +1,5 @@
-import Button from '../../../../button/src';
-import ThemeProvider from '../../../../themeProvider';
+import Button from '../../../../button/src/button';
+import ThemeProvider from '../../../../themeProvider/src/themeProvider';
 
 export default {
   component: Button,
