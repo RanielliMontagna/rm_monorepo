@@ -1,6 +1,6 @@
 {
   "name": "@rm-monorepo/fields",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Ranielli Montagna <raniellimontagna@hotmail.com>",
   "main": "lib/index.js",
   "scripts": {
@@ -10,13 +10,13 @@
     "lint:fix": "yarn lint --fix"
   },
   "dependencies": {
-    "react": "17 || 18",
-    "styled-components": "4 || 5",
-    "react-number-format": "^4.9.3",
-    "react-hook-form": "^7.34.0",
-    "@mui/material": "^5.9.3",
+    "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
-    "@emotion/react": "^11.10.0"
+    "@mui/material": "^5.9.3",
+    "react": "17 || 18",
+    "react-hook-form": "^7.34.0",
+    "react-number-format": "^4.9.3",
+    "styled-components": "4 || 5"
   },
   "files": [
     "lib"
