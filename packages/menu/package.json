@@ -1,7 +1,7 @@
 {
-  "name": "@rm-monorepo/modal",
-  "version": "1.1.0",
-  "description": "Modal",
+  "name": "@rm-monorepo/menu",
+  "version": "1.4.0",
+  "description": "Menu",
   "author": "Ranielli Montagna <raniellimontagna@hotmail.com>",
   "main": "lib/index.js",
   "scripts": {
@@ -12,7 +12,8 @@
   },
   "peerDependencies": {
     "react": "17 || 18",
-    "styled-components": "4 || 5"
+    "styled-components": "4 || 5",
+    "@szhsin/react-menu": "^3.1.2"
   },
   "files": [
     "lib"
