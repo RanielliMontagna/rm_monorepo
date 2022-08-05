@@ -1,6 +1,6 @@
 {
   "name": "@rm-monorepo/menu",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Menu",
   "author": "Ranielli Montagna <raniellimontagna@hotmail.com>",
   "main": "lib/index.js",
@@ -11,9 +11,9 @@
     "lint:fix": "yarn lint --fix"
   },
   "peerDependencies": {
+    "@szhsin/react-menu": "^3.1.2",
     "react": "17 || 18",
-    "styled-components": "4 || 5",
-    "@szhsin/react-menu": "^3.1.2"
+    "styled-components": "4 || 5"
   },
   "files": [
     "lib"
