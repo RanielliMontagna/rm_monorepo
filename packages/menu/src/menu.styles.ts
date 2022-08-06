@@ -4,18 +4,18 @@ import { Menu as SzhsinMenu } from '@szhsin/react-menu';
 
 export const Menu = styled(SzhsinMenu)`
   > ul {
-    background-color: ${({ theme }) => theme?.cores?.terciaria};
+    background-color: ${({ theme }) => theme?.menu?.background};
   }
   > ul > li.szh-menu__divider {
-    background-color: ${({ theme }) => theme?.cores?.secundaria}20;
+    background-color: ${({ theme }) => theme?.menu?.foreground}20;
   }
   > ul > div.szh-menu__arrow {
-    background-color: ${({ theme }) => theme?.cores?.terciaria};
+    background-color: ${({ theme }) => theme?.menu?.background};
   }
   > ul > li.szh-menu__item {
     height: 30px;
     &:hover {
-      background-color: ${({ theme }) => theme?.cores?.primaria}25;
+      background-color: ${({ theme }) => theme?.menu?.foreground}08;
     }
   }
 `;
@@ -23,10 +23,10 @@ export const Menu = styled(SzhsinMenu)`
 export const MenuItemIcone = styled.div`
   display: flex;
   align-items: center;
-  color: ${({ theme }) => theme?.cores?.secundaria};
+  color: ${({ theme }) => theme?.menu?.foreground};
 `;
 
 export const MenuItemTitulo = styled.p`
   font-weight: 300;
-  color: ${({ theme }) => theme?.cores?.secundaria};
+  color: ${({ theme }) => theme?.menu?.foreground};
 `;

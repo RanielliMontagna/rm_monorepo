@@ -23,8 +23,8 @@ export const Modal = styled.div<{ size: ModalSize }>`
   position: relative;
   inset: 0;
   border-radius: 8px;
-  background-color: ${({ theme }) => theme?.cores?.terciaria ?? 'white'};
-  color: ${({ theme }) => theme?.cores?.secundaria ?? 'black'};
+  background-color: ${({ theme }) => theme?.modal?.background ?? 'white'};
+  color: ${({ theme }) => theme?.modal?.foreground ?? 'black'};
 `;
 
 // Cabeçalho

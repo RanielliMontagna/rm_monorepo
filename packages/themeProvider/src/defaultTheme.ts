@@ -30,4 +30,12 @@ export const defaultTheme = {
     cinzaClaro,
     cinzaEscuro,
   },
+  modal: {
+    background: '#FFFFFF',
+    foreground: '#22252C',
+  },
+  menu: {
+    background: '#FFFFFF',
+    foreground: '#22252C',
+  },
 };
