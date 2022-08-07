@@ -1,2 +1,2 @@
-export { default as DrawerNova } from './drawer';
+export { default as Drawer } from './drawer';
 export * from './drawer.types';
