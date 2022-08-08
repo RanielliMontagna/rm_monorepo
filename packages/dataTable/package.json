@@ -1,0 +1,24 @@
+{
+  "name": "@rm-monorepo/data-table",
+  "version": "1.0.0",
+  "description": "DataTable",
+  "author": "Ranielli Montagna <raniellimontagna@hotmail.com>",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf coverage lib",
+    "lint": "eslint .",
+    "lint:fix": "yarn lint --fix"
+  },
+  "peerDependencies": {
+    "react": "17 || 18",
+    "styled-components": "4 || 5"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT"
+}
