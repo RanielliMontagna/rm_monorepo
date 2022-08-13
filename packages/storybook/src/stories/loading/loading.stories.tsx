@@ -1,4 +1,3 @@
-import React from 'react';
 import Loading from '../../../../loading/src/loading';
 import ThemeProvider from '../../../../themeProvider/src/themeProvider';
 
@@ -12,5 +11,3 @@ export const withTheme = () => (
     <Loading />
   </ThemeProvider>
 );
-
-export const withoutTheme = () => <Loading />;

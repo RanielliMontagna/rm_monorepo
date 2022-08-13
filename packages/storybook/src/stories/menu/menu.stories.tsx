@@ -1,7 +1,7 @@
 import { MenuItem } from '@szhsin/react-menu';
 
 import { Menu, MenuItemConteudo } from '../../../../menu/src/menu';
-import { ThemeProvider } from '../../../../themeProvider/src/themeProvider';
+import { ThemeProvider } from '../../../../themeProvider/src';
 
 export default {
   component: Menu,

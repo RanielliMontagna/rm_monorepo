@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { MdClose } from 'react-icons/md';
 
-import { Button } from '../../button/src/button';
+import { Button } from '../../button/src';
 
 import * as styled from './modal.styles';
 import { ModalProps } from './modal.types';

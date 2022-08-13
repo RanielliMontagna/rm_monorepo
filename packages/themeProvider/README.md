@@ -3,7 +3,7 @@
 ## Usage
 
 ```tsx
-import ThemeProvider from '@rm-monorepo/theme-provider';
+import { ThemeProvider } from '@rm-monorepo/theme-provider';
 
 <ThemeProvider />;
 ```

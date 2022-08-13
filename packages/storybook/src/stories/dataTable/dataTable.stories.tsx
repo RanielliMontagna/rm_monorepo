@@ -1,5 +1,5 @@
-import { DataTable } from '../../../../dataTable/src/dataTable';
-import { ThemeProvider } from '../../../../themeProvider/src/themeProvider';
+import { DataTable } from '../../../../dataTable/src';
+import { ThemeProvider } from '../../../../themeProvider/src';
 
 export default {
   component: DataTable,

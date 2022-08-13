@@ -1,4 +1,4 @@
-import { Button } from '../../../../button/src/button';
+import { Button } from '../../../../button/src';
 import ThemeProvider from '../../../../themeProvider/src/themeProvider';
 
 export default {

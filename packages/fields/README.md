@@ -3,7 +3,7 @@
 ## Usage
 
 ```tsx
-import Fields from '@rm-monorepo/fields';
+import { TextField } from '@rm-monorepo/fields';
 
-<Fields />;
+<TextField />;
 ```

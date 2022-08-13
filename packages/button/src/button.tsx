@@ -2,9 +2,9 @@ import React from 'react';
 import * as styled from './button.styles';
 
 import { ButtonProps } from './button.types';
-import { Typography } from '../../typography/src/typography';
+import { Typography } from '../../typography/src';
 
-export const Button: React.FC<ButtonProps> = ({
+const Button: React.FC<ButtonProps> = ({
   children,
   color,
   size,
@@ -36,3 +36,5 @@ export const Button: React.FC<ButtonProps> = ({
 
   return null;
 };
+
+export default Button;

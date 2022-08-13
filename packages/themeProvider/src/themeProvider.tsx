@@ -3,7 +3,7 @@ import { defaultTheme } from './defaultTheme';
 
 import type { IThemeProvider } from './themeProvider.types';
 
-export const ThemeProvider = ({ theme, children }: IThemeProvider) => {
+const ThemeProvider = ({ theme, children }: IThemeProvider) => {
   return (
     <ThemeProviderSC
       theme={{

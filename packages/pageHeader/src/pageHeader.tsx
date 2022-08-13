@@ -7,7 +7,7 @@ import { Button } from '../../button/src';
 
 import * as styled from './pageHeader.styles';
 
-export const PageHeader: FC<PageHeaderProps> = ({ titulo, button, right, style }) => {
+const PageHeader: FC<PageHeaderProps> = ({ titulo, button, right, style }) => {
   return (
     <styled.DivPageHeader style={style}>
       <div className="divTitulo">

@@ -3,7 +3,7 @@
 ## Usage
 
 ```tsx
-import Modal from '@rm-monorepo/modal';
+import { Modal } from '@rm-monorepo/modal';
 
 <Modal />;
 ```

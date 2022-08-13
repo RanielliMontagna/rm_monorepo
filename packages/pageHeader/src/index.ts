@@ -1,2 +1,2 @@
-export { PageHeader } from './pageHeader';
+export { default as PageHeader } from './pageHeader';
 export * from './pageHeader.types';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { HiCurrencyDollar } from 'react-icons/hi';
 import { MdHome } from 'react-icons/md';
 import Drawer from '../../../../drawer/src/drawer';

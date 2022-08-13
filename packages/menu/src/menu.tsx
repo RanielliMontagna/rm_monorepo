@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
 import * as styled from './menu.styles';
-import { MenuProps as MenuPropsSzhsin } from '@szhsin/react-menu';
+import { MenuItem as MenuItemSzhsin, MenuProps as MenuPropsSzhsin } from '@szhsin/react-menu';
 
 import '@szhsin/react-menu/dist/index.css';
 import '@szhsin/react-menu/dist/transitions/slide.css';
@@ -20,6 +20,8 @@ export const MenuItemConteudo = (titulo: string, icone?: JSX.Element) => {
     </div>
   );
 };
+
+export const MenuItem = MenuItemSzhsin;
 
 export const Menu: FC<MenuProps> = ({ menuButton, align, offsetY, offsetX, children }) => {
   return (
