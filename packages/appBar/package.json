@@ -1,6 +1,6 @@
 {
   "name": "@rm-monorepo/app-bar",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "App Bar",
   "author": "Ranielli Montagna <raniellimontagna@hotmail.com>",
   "main": "lib/index.js",
