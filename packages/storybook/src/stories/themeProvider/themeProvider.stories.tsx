@@ -1,4 +1,4 @@
-import ThemeProvider from '../../../../themeProvider/src/themeProvider';
+import { ThemeProvider } from '../../../../themeProvider';
 
 export default {
   component: ThemeProvider,

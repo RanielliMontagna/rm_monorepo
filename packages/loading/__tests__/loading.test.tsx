@@ -2,8 +2,8 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { axe } from 'jest-axe';
 
-import Loading from '../src';
-import ThemeProvider from '../../themeProvider/src';
+import { Loading } from '../src';
+import { ThemeProvider } from '../../themeProvider';
 
 it('is accessible with provider', async () => {
   const { container } = render(
