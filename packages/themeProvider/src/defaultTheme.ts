@@ -38,4 +38,8 @@ export const defaultTheme = {
     background: '#FFFFFF',
     foreground: '#22252C',
   },
+  appBar: {
+    background: '#FFFFFF',
+    foreground: '#22252C',
+  },
 };

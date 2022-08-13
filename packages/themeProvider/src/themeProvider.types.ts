@@ -31,4 +31,8 @@ export interface IThemeProvider
       background?: string;
       foreground?: string;
     };
+    appBar?: {
+      background?: string;
+      foreground?: string;
+    };
   }> {}
