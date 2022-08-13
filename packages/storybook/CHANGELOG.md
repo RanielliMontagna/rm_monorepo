@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.1](https://github.com/RanielliMontagna/rm_monorepo/compare/@rm-monorepo/storybook@1.10.0...@rm-monorepo/storybook@1.10.1) (2022-08-13)
+
+### Bug Fixes
+
+- **packages:** ajusta testes no `loading` e no `theme-provider` ([3eaba42](https://github.com/RanielliMontagna/rm_monorepo/commit/3eaba426df071bd7ebac1c00c39e737a5c713034))
+
 # [1.10.0](https://github.com/RanielliMontagna/rm_monorepo/compare/@rm-monorepo/storybook@1.9.0...@rm-monorepo/storybook@1.10.0) (2022-08-13)
 
 ### Features

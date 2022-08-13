@@ -1,6 +1,6 @@
 {
   "name": "@rm-monorepo/data-table",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "DataTable",
   "author": "Ranielli Montagna <raniellimontagna@hotmail.com>",
   "main": "lib/index.js",
