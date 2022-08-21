@@ -8,12 +8,12 @@ import LeftSide from './leftSide/leftSide';
 const AppBarWithoutMemo: React.FC<IAppBar> = ({ children }) => {
   const _leftSide = React.useMemo(() => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    return React.Children?.toArray(children)?.filter((child: any) => child?.type === LeftSide);
+    return React.Children.toArray(children).filter((child: any) => child.type === LeftSide);
   }, [children]);
 
   const _rightSide = React.useMemo(() => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    return React.Children?.toArray(children)?.find((child: any) => child?.type === RightSide);
+    return React.Children.toArray(children).find((child: any) => child.type === RightSide);
   }, [children]);
 
   return (

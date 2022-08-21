@@ -9,10 +9,18 @@ export default {
 export const Default = () => {
   return (
     <ThemeProvider>
-      <AppBar>
-        <AppBar.LeftSide>coisas a esquerda</AppBar.LeftSide>
-        <AppBar.RightSide>coisas a direita</AppBar.RightSide>
-      </AppBar>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+        <AppBar>
+          <AppBar.LeftSide>coisas a esquerda</AppBar.LeftSide>
+          <AppBar.RightSide>coisas a direita</AppBar.RightSide>
+        </AppBar>
+        <AppBar>
+          <AppBar.LeftSide>coisas a esquerda</AppBar.LeftSide>
+        </AppBar>
+        <AppBar>
+          <AppBar.RightSide>coisas a direita</AppBar.RightSide>
+        </AppBar>
+      </div>
     </ThemeProvider>
   );
 };
