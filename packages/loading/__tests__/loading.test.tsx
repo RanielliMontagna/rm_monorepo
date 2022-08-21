@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import { axe } from 'jest-axe';
 
 import { Loading } from '../src';
-import { ThemeProvider } from '../../themeProvider';
+import { ThemeProvider } from '../../themeProvider/src';
 
 it('is accessible with provider', async () => {
   const { container } = render(
