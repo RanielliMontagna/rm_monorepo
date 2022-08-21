@@ -17,14 +17,23 @@ export const Modal = styled.div<{ size: ModalSize }>`
   max-height: 90vh;
   max-width: 90vw;
 
-  width: ${({ size }) => (size === 'sm' ? '400px' : size === 'lg' ? '800px' : '600px')};
+  width: ${({ size }) => {
+    switch (size) {
+      case 'sm':
+        return '400px';
+      case 'md':
+        return '600px';
+      case 'lg':
+        return '800px';
+    }
+  }};
 
   overflow: auto;
   position: relative;
   inset: 0;
   border-radius: 8px;
-  background-color: ${({ theme }) => theme?.modal?.background ?? 'white'};
-  color: ${({ theme }) => theme?.modal?.foreground ?? 'black'};
+  background-color: ${({ theme }) => theme.modal.background};
+  color: ${({ theme }) => theme.modal.foreground};
 `;
 
 // Cabeçalho
@@ -38,7 +47,7 @@ export const ModalHeader = styled.div`
 
 export const TituloModal = styled.div`
   padding-left: 4px;
-  font-size: ${({ theme }) => theme?.fontes?.lg};
+  font-size: ${({ theme }) => theme.fontes.lg};
   font-weight: 600;
   overflow: hidden;
   white-space: nowrap;
@@ -54,7 +63,7 @@ export const DivBotaoFechar = styled.div`
   &:hover {
     transition: 0.3s;
     transform: scale(1.3);
-    color: ${({ theme }) => theme?.cores?.primaria};
+    color: ${({ theme }) => theme.cores.primaria};
   }
 `;
 

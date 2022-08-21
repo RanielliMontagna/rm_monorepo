@@ -17,3 +17,20 @@ export const menu = () => (
     </Menu>
   </ThemeProvider>
 );
+
+export const menuWithDifferenteTheme = () => (
+  <ThemeProvider
+    theme={{
+      menu: {
+        background: 'red',
+        foreground: 'white',
+      },
+    }}
+  >
+    <Menu menuButton={<div style={{ height: '100%', display: 'flex', alignItems: 'center' }}>clique aqui</div>}>
+      <>
+        <MenuItem onClick={() => alert('clicou aqui')}>{MenuItemConteudo('texto', <>i</>)}</MenuItem>
+      </>
+    </Menu>
+  </ThemeProvider>
+);

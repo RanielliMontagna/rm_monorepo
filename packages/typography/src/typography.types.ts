@@ -1,9 +1,9 @@
 import React from 'react';
-import type { IFontes } from './../../themeProvider/src/themeProvider.types';
-export type FontWeight = 'slim' | 'normal' | 'bold';
 
+export type FontWeight = 'slim' | 'normal' | 'bold';
+export type TypographySizes = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 export interface TypographyProps {
-  size?: IFontes;
+  size?: TypographySizes;
   weight?: FontWeight;
   children: React.ReactNode;
   color?: string;

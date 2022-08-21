@@ -1,8 +1,8 @@
 export type IVariantButton = 'normal' | 'outlined' | 'dashed' | 'naked';
-
+export type ISizeButton = 'sm' | 'md' | 'lg';
 export interface ButtonProps {
   color?: string;
-  size?: 'sm' | 'md' | 'lg';
+  size?: ISizeButton;
   fullWidth?: true;
   variant?: IVariantButton;
   startIcon?: JSX.Element;

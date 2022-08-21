@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-import type { IFontes } from '../../themeProvider/src/themeProvider.types';
+import type { ISizeButton } from './button.types';
 
 import { getColor } from './../../utils/src/styles/getColor';
 import { getContrastColor } from './../../utils/src/styles/getContrastColor';
 
-export const Button = styled.button<{ size: IFontes; fullWidth: boolean; color?: string }>`
+export const Button = styled.button<{ size: ISizeButton; fullWidth: boolean; color?: string }>`
   padding: 0px 16px 0 10px;
   cursor: pointer;
   border-radius: 4px;

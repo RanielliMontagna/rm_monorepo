@@ -6,19 +6,7 @@ export default {
   title: 'Design System/Modal',
 };
 
-export const withoutProvider = () => (
-  <Modal
-    open={true}
-    onClose={() => {
-      //
-    }}
-    titulo="teste"
-  >
-    <div>div dentro do Modal</div>
-  </Modal>
-);
-
-export const withProvider = () => (
+export const modal = () => (
   <ThemeProvider
     theme={{
       cores: {

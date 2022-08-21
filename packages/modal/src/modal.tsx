@@ -6,12 +6,12 @@ import { Button } from '../../button/src';
 import * as styled from './modal.styles';
 import { ModalProps } from './modal.types';
 
-const Modal: FC<ModalProps> = ({ titulo, size, onClose, children, open, footer }) => {
+const Modal: FC<ModalProps> = ({ titulo, size = 'md', onClose, children, open, footer }) => {
   if (!open) return null;
 
   return (
     <styled.Backdrop>
-      <styled.Modal size={size || 'md'}>
+      <styled.Modal size={size}>
         <styled.ModalHeader>
           <styled.TituloModal>{titulo}</styled.TituloModal>
           <styled.DivBotaoFechar onClick={onClose}>

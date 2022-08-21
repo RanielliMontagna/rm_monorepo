@@ -1,6 +1,12 @@
 import { PropsWithChildren } from 'react';
 
-export type IFontes = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+export type IFontes = {
+  xs: string;
+  sm: string;
+  md: string;
+  lg: string;
+  xl: string;
+};
 
 export interface ICoresPrincipais {
   primaria?: string;
@@ -22,17 +28,17 @@ export interface IThemeProvider
       cores?: ICoresPrincipais;
       coresUtilitarias?: ICoresUtilitarias;
       coresExtras?: Object;
-    };
-    modal?: {
-      background?: string;
-      foreground?: string;
-    };
-    menu?: {
-      background?: string;
-      foreground?: string;
-    };
-    appBar?: {
-      background?: string;
-      foreground?: string;
+      modal?: {
+        background?: string;
+        foreground?: string;
+      };
+      menu?: {
+        background?: string;
+        foreground?: string;
+      };
+      appBar?: {
+        background?: string;
+        foreground?: string;
+      };
     };
   }> {}
