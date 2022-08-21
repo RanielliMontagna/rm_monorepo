@@ -24,10 +24,6 @@ const DrawerProvider = ({ children }: React.PropsWithChildren<React.ReactNode>) 
 const useDrawerContext = () => {
   const context = React.useContext<IDrawerContext>(DrawerContext);
 
-  if (!context) {
-    throw new Error('<Drawer /> Não foi possível acessar o DrawerContext.');
-  }
-
   return context;
 };
 
