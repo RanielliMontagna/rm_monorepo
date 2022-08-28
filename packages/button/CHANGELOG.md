@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.5](https://github.com/RanielliMontagna/rm_monorepo/compare/@rm-monorepo/button@1.3.4...@rm-monorepo/button@1.3.5) (2022-08-28)
+
+### Bug Fixes
+
+- **button:** ajusta estilização que ocasionava erro nos testes ([478c9c7](https://github.com/RanielliMontagna/rm_monorepo/commit/478c9c7981bbc27cdab31824d972516d01e7b527))
+
 ## [1.3.4](https://github.com/RanielliMontagna/rm_monorepo/compare/@rm-monorepo/button@1.3.3...@rm-monorepo/button@1.3.4) (2022-08-28)
 
 **Note:** Version bump only for package @rm-monorepo/button
