@@ -33,7 +33,7 @@ export const Button = styled.button<{ size: ISizeButton; fullWidth: boolean; col
     padding: 0px 15px 0 9px;
     height: ${(props) => (props?.size === 'sm' ? '22px' : props?.size === 'md' ? '34px' : '42px')};
     border: 1px solid ${({ color }) => getColor({ color })};
-    background-color: transparent;
+    background-color: ${({ color }) => getContrastColor({ color })};
     color: ${({ color }) => getColor({ color })};
 
     &:hover {

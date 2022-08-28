@@ -1,10 +1,11 @@
-import { TextField } from '@mui/material';
+import type { ISearchField } from './searchField.types';
+import { TextFieldStyled } from './searchField.styles';
+
 import { HiOutlineSearch } from 'react-icons/hi';
-import { ISearchField } from './searchField.types';
 
 export const SearchField = ({ placeholder, handleSearch, id }: ISearchField) => {
   return (
-    <TextField
+    <TextFieldStyled
       size="small"
       id={id ?? 'search'}
       variant="outlined"
@@ -16,10 +17,6 @@ export const SearchField = ({ placeholder, handleSearch, id }: ISearchField) => 
             <HiOutlineSearch size={18} />
           </div>
         ),
-        style: {
-          height: '36px',
-          fontSize: '14px',
-        },
         onFocus: (e: React.FocusEvent<HTMLInputElement>) => e.target.select(),
       }}
     />

@@ -1,5 +1,6 @@
 import { SearchField } from '../../../../fields/src/searchField/searchField';
 import throttle from 'lodash.throttle';
+import { ThemeProvider } from '../../../../themeProvider/src';
 
 export default {
   component: SearchField,
@@ -16,5 +17,9 @@ export const numberField = () => {
     { leading: false }
   );
 
-  return <SearchField handleSearch={handleSearch} placeholder="" />;
+  return (
+    <ThemeProvider>
+      <SearchField handleSearch={handleSearch} placeholder="" />
+    </ThemeProvider>
+  );
 };
