@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import { IDrawerItemOptions } from '../drawer.types';
+import type { IDrawerItemOptions } from '../drawer.types';
 import { SubMenuContainer, SubMenuHeader, SubMenuItem } from './subMenu.styles';
 import { useDrawerContext } from '../drawerContext/drawerContext';
 import { MdClose } from 'react-icons/md';

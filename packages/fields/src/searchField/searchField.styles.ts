@@ -6,5 +6,6 @@ export const TextFieldStyled = styled(TextField)`
     height: 36px;
     font-size: 14px;
     background-color: ${({ theme }) => theme.cores.terciaria};
+    transition: all 0.3s ease-in-out;
   }
 `;

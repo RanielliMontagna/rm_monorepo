@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { DrawerHeader } from '../drawer.styles';
-import { IDrawerHeader } from '../drawer.types';
+import type { IDrawerHeader } from '../drawer.types';
 
 const Header = ({ children, ...rest }: IDrawerHeader) => {
   return <DrawerHeader {...rest}>{children}</DrawerHeader>;
