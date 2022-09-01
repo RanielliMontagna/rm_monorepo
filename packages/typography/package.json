@@ -13,6 +13,7 @@
     "test:watch": "jest --watch"
   },
   "peerDependencies": {
+    "@rm-monorepo/utils": "*",
     "react": "17 || 18",
     "styled-components": "4 || 5"
   },

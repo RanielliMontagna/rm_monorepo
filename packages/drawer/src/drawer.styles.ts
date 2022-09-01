@@ -1,6 +1,7 @@
 import React from 'react';
+import type { IDrawerHeader } from './drawer.types';
+
 import styled, { css } from 'styled-components';
-import { IDrawerHeader } from './drawer.types';
 
 export const DrawerContainer = styled.div`
   display: flex;

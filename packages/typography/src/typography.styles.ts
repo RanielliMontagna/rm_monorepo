@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { getColor } from './../../utils/src/styles/getColor';
+import { getColor } from '@rm-monorepo/utils';
 
 import type { TypographyProps } from './typography.types';
 
