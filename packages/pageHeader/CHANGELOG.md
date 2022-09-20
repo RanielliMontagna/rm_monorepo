@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.5](https://github.com/RanielliMontagna/rm_monorepo/compare/@rm-monorepo/page-header@1.1.4...@rm-monorepo/page-header@1.1.5) (2022-09-20)
+
+**Note:** Version bump only for package @rm-monorepo/page-header
+
 ## [1.1.4](https://github.com/RanielliMontagna/rm_monorepo/compare/@rm-monorepo/page-header@1.1.2...@rm-monorepo/page-header@1.1.4) (2022-08-28)
 
 **Note:** Version bump only for package @rm-monorepo/page-header
