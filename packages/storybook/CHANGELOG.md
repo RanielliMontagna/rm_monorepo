@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.12.0](https://github.com/RanielliMontagna/rm_monorepo/compare/@rm-monorepo/storybook@1.11.2...@rm-monorepo/storybook@1.12.0) (2022-09-20)
+
+### Features
+
+- **fields:** implementa componentes de `select`, `autoComplete` e `creatable` ([cebc52f](https://github.com/RanielliMontagna/rm_monorepo/commit/cebc52f33f337c9f1c2c2fb9299c56db35820144))
+
 ## [1.11.2](https://github.com/RanielliMontagna/rm_monorepo/compare/@rm-monorepo/storybook@1.11.1...@rm-monorepo/storybook@1.11.2) (2022-09-20)
 
 **Note:** Version bump only for package @rm-monorepo/storybook
