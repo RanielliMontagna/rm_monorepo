@@ -45,6 +45,7 @@ function Creatable({ name, control, defaultValue, rules, shouldUnregister, optio
           selectOnFocus
           clearOnBlur
           handleHomeEndKeys
+          fullWidth
           options={options}
           getOptionLabel={(option) => {
             // Value selected with enter, right from the input
