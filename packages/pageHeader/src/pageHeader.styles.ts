@@ -15,6 +15,7 @@ export const DivPageHeader = styled.div`
   }
 
   @media (max-width: 576px) {
+    padding: 24px;
     flex-direction: column;
     > div {
       margin-bottom: 8px;

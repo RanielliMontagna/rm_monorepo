@@ -15,6 +15,7 @@ export const DatePicker = ({
   defaultValue,
   shouldUnregister,
   disableFuture,
+  disablePast,
   maxDate,
   minDate,
   ...rest
@@ -29,7 +30,8 @@ export const DatePicker = ({
         shouldUnregister={shouldUnregister}
         render={({ field: { value, onChange } }) => (
           <DatePickerMui
-            disableFuture={disableFuture ?? true}
+            disableFuture={disableFuture ?? false}
+            disablePast={disablePast ?? false}
             value={value ?? null}
             maxDate={maxDate ?? undefined}
             minDate={minDate ?? undefined}

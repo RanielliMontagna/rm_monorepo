@@ -13,6 +13,8 @@ export const datePicker = () => {
   return (
     <ThemeProvider>
       <DatePicker name="valor" control={control} />
+      <DatePicker name="valor2" control={control} disableFuture />
+      <DatePicker name="valor3" control={control} disablePast />
     </ThemeProvider>
   );
 };
