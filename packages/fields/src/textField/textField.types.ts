@@ -15,7 +15,4 @@ export type ITextField = Omit<UseControllerProps, 'control'> &
     | 'autoComplete'
     | 'InputProps'
     | 'disabled'
-  > & {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    control: any;
-  };
+  >;

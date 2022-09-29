@@ -1,5 +1,5 @@
-import { useForm } from 'react-hook-form';
 import { CurrencyField } from '../../../../fields/src/currencyField/currencyField';
+import { Form } from '../../../../fields/src/form';
 
 export default {
   component: CurrencyField,
@@ -7,15 +7,18 @@ export default {
 };
 
 export const currencyField = () => {
-  const { control } = useForm();
-
   return (
-    <CurrencyField
-      name="valor"
-      control={control}
-      textFieldProps={{
-        size: 'small',
+    <Form
+      onSubmit={() => {
+        //
       }}
-    />
+    >
+      <CurrencyField
+        name="valor"
+        textFieldProps={{
+          size: 'small',
+        }}
+      />
+    </Form>
   );
 };

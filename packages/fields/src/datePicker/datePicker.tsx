@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { Controller } from 'react-hook-form';
+import { Controller, useFormContext } from 'react-hook-form';
 
 import { IDatePicker } from './dataPicker.types';
 
@@ -9,7 +9,6 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker as DatePickerMui } from '@mui/x-date-pickers/DatePicker';
 
 export const DatePicker = ({
-  control,
   rules,
   name,
   defaultValue,
@@ -20,10 +19,16 @@ export const DatePicker = ({
   minDate,
   ...rest
 }: IDatePicker) => {
+  const useForm = useFormContext();
+
+  if (!useForm) {
+    throw new Error('Para usar o <DataPicker /> é necessário que ele esteja dentro de um <Form />');
+  }
+
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <Controller
-        control={control}
+        control={useForm.control}
         name={name}
         rules={rules}
         defaultValue={defaultValue}

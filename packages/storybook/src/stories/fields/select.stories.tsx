@@ -1,5 +1,5 @@
 import { Grid } from '@mui/material';
-import { useForm } from 'react-hook-form';
+import { Form } from '../../../../fields/src/form';
 import { Select } from '../../../../fields/src/select/select';
 
 export default {
@@ -8,26 +8,29 @@ export default {
 };
 
 export const select = () => {
-  const { control } = useForm();
-
   return (
     <Grid container>
       <Grid item width={300}>
-        <Select
-          name="nome"
-          fullWidth
-          control={control}
-          options={[
-            {
-              label: 'teste',
-              value: 'teste',
-            },
-            {
-              label: 'teste2',
-              value: 'teste2',
-            },
-          ]}
-        />
+        <Form
+          onSubmit={() => {
+            //
+          }}
+        >
+          <Select
+            name="nome"
+            fullWidth
+            options={[
+              {
+                label: 'teste',
+                value: 'teste',
+              },
+              {
+                label: 'teste2',
+                value: 'teste2',
+              },
+            ]}
+          />
+        </Form>
       </Grid>
     </Grid>
   );

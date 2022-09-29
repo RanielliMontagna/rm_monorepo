@@ -1,5 +1,5 @@
-import { useForm } from 'react-hook-form';
 import { DatePicker } from '../../../../fields/src/datePicker/datePicker';
+import { Form } from '../../../../fields/src/form';
 import ThemeProvider from '../../../../themeProvider/src/themeProvider';
 
 export default {
@@ -8,13 +8,17 @@ export default {
 };
 
 export const datePicker = () => {
-  const { control } = useForm();
-
   return (
     <ThemeProvider>
-      <DatePicker name="valor" control={control} />
-      <DatePicker name="valor2" control={control} disableFuture />
-      <DatePicker name="valor3" control={control} disablePast />
+      <Form
+        onSubmit={() => {
+          //
+        }}
+      >
+        <DatePicker name="valor" />
+        <DatePicker name="valor2" disableFuture />
+        <DatePicker name="valor3" disablePast />
+      </Form>
     </ThemeProvider>
   );
 };

@@ -1,6 +1,7 @@
 import { Grid } from '@mui/material';
-import { useForm } from 'react-hook-form';
-import { Creatable } from '../../../../fields/src/creatable/creatable';
+import Creatable from '../../../../fields/src/creatable/creatable';
+import { Form } from '../../../../fields/src/form';
+import { ThemeProvider } from '../../../../themeProvider/src';
 
 export default {
   component: Creatable,
@@ -8,23 +9,28 @@ export default {
 };
 
 export const creatable = () => {
-  const { control } = useForm();
-
   return (
-    <Grid container gap={4}>
-      <Grid item width={300}>
-        <Creatable
-          name="nome"
-          fullWidth
-          control={control}
-          options={[
-            {
-              title: 'teste',
-              inputValue: 'teste',
-            },
-          ]}
-        />
+    <ThemeProvider>
+      <Grid container gap={4}>
+        <Grid item width={300}>
+          <Form
+            onSubmit={() => {
+              //
+            }}
+          >
+            <Creatable
+              name="nome"
+              fullWidth
+              options={[
+                {
+                  value: 'teste',
+                  label: 'teste',
+                },
+              ]}
+            />
+          </Form>
+        </Grid>
       </Grid>
-    </Grid>
+    </ThemeProvider>
   );
 };

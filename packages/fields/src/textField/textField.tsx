@@ -1,11 +1,18 @@
 import { TextField as TextFieldMui } from '@mui/material';
-import { Controller } from 'react-hook-form';
+import { Controller, useFormContext } from 'react-hook-form';
+
 import { ITextField } from './textField.types';
 
-export const TextField = ({ control, rules, name, defaultValue, shouldUnregister, ...rest }: ITextField) => {
+export const TextField = ({ rules, name, defaultValue, shouldUnregister, ...rest }: ITextField) => {
+  const useForm = useFormContext();
+
+  if (!useForm) {
+    throw new Error('Para usar o <TextField /> é necessário que ele esteja dentro de um <Form />');
+  }
+
   return (
     <Controller
-      control={control}
+      control={useForm.control}
       name={name}
       rules={rules}
       defaultValue={defaultValue}

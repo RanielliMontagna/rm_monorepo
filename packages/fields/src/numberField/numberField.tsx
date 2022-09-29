@@ -1,4 +1,4 @@
-import { Controller } from 'react-hook-form';
+import { Controller, useFormContext } from 'react-hook-form';
 import NumberFormat from 'react-number-format';
 [];
 import { TextField } from '@mui/material';
@@ -7,7 +7,6 @@ import type { INumberField } from './numberField.types';
 import { useMasks } from './useMasks';
 
 export const NumberField = ({
-  control,
   name,
   defaultValue,
   shouldUnregister,
@@ -16,11 +15,17 @@ export const NumberField = ({
   onInputChange,
   ...rest
 }: INumberField) => {
+  const useForm = useFormContext();
+
+  if (!useForm) {
+    throw new Error('Para usar o <NumberField /> é necessário que ele esteja dentro de um <Form />');
+  }
+
   const { objMask } = useMasks(mask);
 
   return (
     <Controller
-      control={control}
+      control={useForm.control}
       name={name}
       defaultValue={defaultValue}
       shouldUnregister={shouldUnregister}

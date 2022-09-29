@@ -1,4 +1,4 @@
-import { useForm } from 'react-hook-form';
+import { Form } from '../../../../fields/src/form';
 import { TextField } from '../../../../fields/src/textField/textField';
 
 export default {
@@ -7,7 +7,13 @@ export default {
 };
 
 export const textField = () => {
-  const { control } = useForm();
-
-  return <TextField name="nome" control={control} />;
+  return (
+    <Form
+      onSubmit={() => {
+        //
+      }}
+    >
+      <TextField name="nome" />
+    </Form>
+  );
 };

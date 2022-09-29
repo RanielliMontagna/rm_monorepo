@@ -6,8 +6,6 @@ export type IDatePicker = Omit<UseControllerProps, 'control'> &
     TextFieldProps,
     'label' | 'error' | 'helperText' | 'size' | 'fullWidth' | 'variant' | 'autoFocus' | 'placeholder'
   > & {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    control: any;
     disableFuture?: boolean;
     disablePast?: boolean;
     maxDate?: string;

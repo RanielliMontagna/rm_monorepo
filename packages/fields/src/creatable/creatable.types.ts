@@ -1,18 +1,19 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import { TextFieldProps } from '@mui/material';
-import { UseControllerProps } from 'react-hook-form';
+import type { AutocompleteProps, TextFieldProps } from '@mui/material';
+import { ControllerProps } from 'react-hook-form';
 
-export type IOption = {
-  inputValue?: string;
-  title: string;
-};
+type ControllerCreatable = Omit<ControllerProps, 'render' | 'control'>;
 
-export type ICreatable = Omit<UseControllerProps, 'control'> &
-  TextFieldProps & {
-    control: any;
+export type CreatableOption =
+  | {
+      label: string;
+      value?: string | number | readonly string[] | undefined;
+    }
+  | string;
 
-    /**
-     * As opções que serão exibidas no autocomplete
-     */
-    options: IOption[];
+export type CreatableProps = Omit<AutocompleteProps<CreatableOption, true, true, true>, 'renderInput'> &
+  ControllerCreatable & {
+    options: CreatableOption[];
+    textFieldProps?: TextFieldProps;
+    onCreateOption?: (value: string) => void;
+    hideAddButton?: boolean;
   };
