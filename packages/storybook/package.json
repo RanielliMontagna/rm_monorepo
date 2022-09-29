@@ -1,6 +1,6 @@
 {
   "name": "@rm-monorepo/storybook",
-  "version": "1.12.0",
+  "version": "1.12.1",
   "description": "Storybook",
   "author": "Ranielli Montagna <raniellimontagna@hotmail.com>",
   "scripts": {
