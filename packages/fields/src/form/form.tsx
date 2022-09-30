@@ -1,4 +1,4 @@
-import { PropsWithChildren } from 'react';
+import { PropsWithChildren, useEffect } from 'react';
 import { FormProvider, useForm, UseFormProps } from 'react-hook-form';
 
 interface IFormProps<T>
@@ -10,6 +10,10 @@ interface IFormProps<T>
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function Form({ children, onSubmit, ...rest }: IFormProps<any>) {
   const methods = useForm(rest);
+
+  useEffect(() => {
+    methods.reset(rest.defaultValues);
+  }, [rest.defaultValues, methods.reset]);
 
   return (
     <FormProvider {...methods}>
