@@ -3,8 +3,7 @@ export { NumberField } from './numberField/numberField';
 export { SearchField } from './searchField/searchField';
 export { TextField } from './textField/textField';
 export { DatePicker } from './datePicker/datePicker';
-export { default as Creatable } from './creatable/creatable';
+export { Creatable } from './creatable/creatable';
 export { Select } from './select/select';
 export { Autocomplete } from './autoComplete/autoComplete';
-
-export * from './form';
+export { Form } from './form';

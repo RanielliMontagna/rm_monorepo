@@ -5,7 +5,7 @@ import type { CreatableProps } from './creatable.types';
 import { SDivAutoComplete, SDivNoOptions } from './creatable.styles';
 import { HiPlus } from 'react-icons/hi';
 
-const Creatable = ({
+export const Creatable = ({
   name,
   rules,
   defaultValue,

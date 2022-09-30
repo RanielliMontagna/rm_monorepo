@@ -8,7 +8,7 @@ interface IFormProps<T>
     UseFormProps {}
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-function Form({ children, onSubmit, ...rest }: IFormProps<any>) {
+export function Form({ children, onSubmit, ...rest }: IFormProps<any>) {
   const methods = useForm(rest);
 
   return (
