@@ -1,6 +1,6 @@
 {
   "name": "@rm-monorepo/fields",
-  "version": "1.5.4",
+  "version": "1.5.5",
   "author": "Ranielli Montagna <raniellimontagna@hotmail.com>",
   "main": "lib/index.js",
   "scripts": {
