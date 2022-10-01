@@ -1,6 +1,6 @@
 import { Button, Grid } from '@mui/material';
 import { Form } from '../../../../fields/src/form';
-import TextField from '../../../../fields/src/textField/textField';
+import { TextField } from '../../../../fields/src/textField/textField';
 
 export default {
   component: TextField,

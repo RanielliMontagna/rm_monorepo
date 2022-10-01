@@ -51,4 +51,4 @@ const TextField = ({ name, rules, defaultValue, shouldUnregister, mask, ...rest 
   );
 };
 
-export default TextField;
+export { TextField };
