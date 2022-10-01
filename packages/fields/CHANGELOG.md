@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/RanielliMontagna/rm_monorepo/compare/@rm-monorepo/fields@1.5.5...@rm-monorepo/fields@1.6.0) (2022-10-01)
+
+### Bug Fixes
+
+- **fields:** ajusta exportação dos fields ([3ce6f5d](https://github.com/RanielliMontagna/rm_monorepo/commit/3ce6f5dccafc4abf31a1200f4769a32e3c37c289))
+
+### Features
+
+- **fields:** implementa mascaras e melhora componente `textField` ([8b13599](https://github.com/RanielliMontagna/rm_monorepo/commit/8b135998c479d03e82f5e84654f10bfed4ed08ce))
+
 ## [1.5.5](https://github.com/RanielliMontagna/rm_monorepo/compare/@rm-monorepo/fields@1.5.4...@rm-monorepo/fields@1.5.5) (2022-09-30)
 
 **Note:** Version bump only for package @rm-monorepo/fields
