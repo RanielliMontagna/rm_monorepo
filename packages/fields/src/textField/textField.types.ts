@@ -8,4 +8,9 @@ export type Masks = 'cpf' | 'cnpj' | 'cpfCnpj' | 'cep' | 'telefone' | 'decimal' 
 export type TextFieldProps = TextFieldPropsMui &
   ControllerTextField & {
     mask?: Masks;
+
+    /**
+     * Callback que pode ser chamada quando o valor do campo for alterado.
+     */
+    onInputChange?: (value: string) => void;
   };
