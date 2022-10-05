@@ -39,6 +39,8 @@ export const Creatable = ({
       defaultValue={defaultValue}
       shouldUnregister={shouldUnregister}
       render={({ field: { value, onChange } }) => {
+        const txt = value?.label || value?.value || value;
+
         return (
           <SDivAutoComplete hideAddButton={hideAddButton}>
             <Autocomplete
@@ -48,7 +50,7 @@ export const Creatable = ({
               options={options}
               noOptionsText={
                 <SDivNoOptions onClick={() => _handleCreateOption(value)}>
-                  <Typography>Adicionar "{value?.label || value?.value || value}"</Typography>
+                  <Typography>Adicionar {txt && `"${txt}"`}</Typography>
                 </SDivNoOptions>
               }
               {...rest}
