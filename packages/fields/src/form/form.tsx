@@ -17,7 +17,9 @@ export function Form({ children, onSubmit, ...rest }: IFormProps<any>) {
 
   return (
     <FormProvider {...methods}>
-      <form onSubmit={methods.handleSubmit(onSubmit)}>{children}</form>
+      <form onSubmit={methods.handleSubmit(onSubmit)}>
+        {typeof children === 'function' ? children(methods) : children}
+      </form>
     </FormProvider>
   );
 }

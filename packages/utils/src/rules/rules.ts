@@ -22,6 +22,8 @@ export const email = {
 
 export const cpf = {
   validate: (value: string) => {
+    if (!value) return;
+
     if (value?.length !== 11) {
       return 'O CPF deve ter 11 dígitos';
     }
@@ -30,6 +32,8 @@ export const cpf = {
 
 export const cnpj = {
   validate: (value: string) => {
+    if (!value) return;
+
     if (value?.length !== 14) {
       return 'O CNPJ deve ter 14 dígitos';
     }
@@ -38,6 +42,8 @@ export const cnpj = {
 
 export const cpfCnpj = {
   validate: (value: string) => {
+    if (!value) return;
+
     if (value?.length < 11) {
       return 'O CPF deve ter 11 dígitos';
     } else if (value?.length > 11 && value?.length < 14) {
@@ -48,9 +54,11 @@ export const cpfCnpj = {
 
 export const phone = {
   validate: (value: string) => {
-    if (value?.length < 10) {
+    if (!value) return;
+
+    if (value.replace(/\D/g, '')?.length < 10) {
       return 'O telefone deve ter no mínimo 10 dígitos';
-    } else if (value?.length > 11) {
+    } else if (value.replace(/\D/g, '')?.length > 11) {
       return 'O telefone deve ter no máximo 11 dígitos';
     }
   },

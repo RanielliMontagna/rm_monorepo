@@ -23,7 +23,6 @@ const floatFormatter = (value: string, digits = 2) => {
 
 const currencyFormatter = (value: string) => {
   if (!value) return value;
-  if (value === '0.00') return '';
 
   return new Intl.NumberFormat('pt-BR', {
     minimumFractionDigits: 2,
@@ -87,6 +86,8 @@ export const cep = {
 
 export const telefone = {
   format: (value: string) => {
+    if (!value) return;
+
     if (value.length < 11) {
       return value
         ?.replace(/\D/g, '')
