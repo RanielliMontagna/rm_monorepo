@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.3](https://github.com/RanielliMontagna/rm_monorepo/compare/@rm-monorepo/fields@1.6.2...@rm-monorepo/fields@1.6.3) (2022-10-07)
+
+### Bug Fixes
+
+- **fields:** adiciona valor do form ao field `creatable` ([b88adfc](https://github.com/RanielliMontagna/rm_monorepo/commit/b88adfc77969fa5dc8ac54f9631608873794adc8))
+
 ## [1.6.2](https://github.com/RanielliMontagna/rm_monorepo/compare/@rm-monorepo/fields@1.6.1...@rm-monorepo/fields@1.6.2) (2022-10-05)
 
 **Note:** Version bump only for package @rm-monorepo/fields
