@@ -46,6 +46,7 @@ export const Creatable = ({
             <Autocomplete
               size="small"
               fullWidth
+              value={value}
               onChange={(_, values) => onChange(values)}
               options={options}
               noOptionsText={
