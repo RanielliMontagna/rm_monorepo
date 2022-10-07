@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.3](https://github.com/RanielliMontagna/rm_monorepo/compare/@rm-monorepo/utils@1.3.2...@rm-monorepo/utils@1.3.3) (2022-10-07)
+
+**Note:** Version bump only for package @rm-monorepo/utils
+
 ## [1.3.2](https://github.com/RanielliMontagna/rm_monorepo/compare/@rm-monorepo/utils@1.3.1...@rm-monorepo/utils@1.3.2) (2022-09-29)
 
 **Note:** Version bump only for package @rm-monorepo/utils
