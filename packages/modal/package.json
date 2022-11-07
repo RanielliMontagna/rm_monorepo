@@ -1,6 +1,6 @@
 {
   "name": "@rm-monorepo/modal",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Modal",
   "author": "Ranielli Montagna <raniellimontagna@hotmail.com>",
   "main": "lib/index.js",
