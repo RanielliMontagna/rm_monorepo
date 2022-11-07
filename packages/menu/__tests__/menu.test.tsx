@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import { axe } from 'jest-axe';
 
 import { Menu, MenuItemConteudo } from '../src';
-import { ThemeProvider } from '../../themeProvider/lib';
+import ThemeProvider from '../../themeProvider/src/themeProvider';
 
 it('is accessible', async () => {
   const { container } = render(

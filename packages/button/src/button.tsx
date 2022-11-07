@@ -14,6 +14,7 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   type,
   hide,
+  disabled,
 }) => {
   if (!hide)
     return (
@@ -24,6 +25,7 @@ const Button: React.FC<ButtonProps> = ({
         className={variant ?? 'normal'}
         onClick={onClick}
         type={type ?? 'button'}
+        disabled={disabled}
       >
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'start', marginRight: '6px' }}>
           {startIcon}

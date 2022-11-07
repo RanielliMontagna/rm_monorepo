@@ -10,16 +10,16 @@ export const padrao = () => (
   <ThemeProvider>
     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
       <div style={{ display: 'flex', gap: '16px' }}>
-        <Button size="sm" variant="dashed">
+        <Button size="sm" variant="dashed" disabled>
           SM/DASHED
         </Button>
-        <Button size="sm" variant="naked">
+        <Button size="sm" variant="naked" disabled>
           SM/NAKED
         </Button>
-        <Button size="sm" variant="normal">
+        <Button size="sm" variant="normal" disabled>
           SM/NORMAL
         </Button>
-        <Button size="sm" variant="outlined">
+        <Button size="sm" variant="outlined" disabled>
           SM/OUTLINED
         </Button>
       </div>

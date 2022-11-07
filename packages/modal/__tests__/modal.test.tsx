@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import { axe } from 'jest-axe';
 
 import { Modal } from '../src';
-import { ThemeProvider } from '../../themeProvider/lib';
+import ThemeProvider from '../../themeProvider/src/themeProvider';
 
 it('is accessible', async () => {
   const { container } = render(

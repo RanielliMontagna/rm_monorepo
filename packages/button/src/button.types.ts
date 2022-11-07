@@ -10,4 +10,5 @@ export interface ButtonProps {
   children: React.ReactNode;
   type?: 'button' | 'submit' | 'reset';
   hide?: boolean;
+  disabled?: boolean;
 }

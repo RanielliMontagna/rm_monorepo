@@ -1,9 +1,35 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import type { ISizeButton } from './button.types';
 
 import { getColor } from './../../utils/src/styles/getColor';
 import { getContrastColor } from './../../utils/src/styles/getContrastColor';
+
+export const disabledStyle = (color?: string) => css`
+  cursor: auto;
+  opacity: 0.5;
+
+  &:disabled {
+    &:hover {
+      color: ${typeof color === 'string' && getColor({ color })};
+
+      &.outlined {
+        background-color: ${({ theme }) => theme?.cores?.terciaria};
+      }
+      &.dashed {
+        background-color: transparent;
+      }
+      &.naked {
+        background-color: transparent;
+      }
+      &.normal {
+        background-color: ${typeof color === 'string' && getColor({ color })};
+        color: ${typeof color === 'string' && getContrastColor({ color })};
+        filter: none;
+      }
+    }
+  }
+`;
 
 export const Button = styled.button<{ size: ISizeButton; fullWidth: boolean; color?: string }>`
   padding: 0px 16px 0 10px;
@@ -65,4 +91,6 @@ export const Button = styled.button<{ size: ISizeButton; fullWidth: boolean; col
     color: ${({ color }) => getContrastColor({ color })};
     transition: 0.5s;
   }
+
+  ${({ disabled, color }) => disabled && disabledStyle(color)}
 `;
