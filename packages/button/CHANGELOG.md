@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.6](https://github.com/RanielliMontagna/rm_monorepo/compare/@rm-monorepo/button@1.3.5...@rm-monorepo/button@1.3.6) (2022-11-07)
+
+**Note:** Version bump only for package @rm-monorepo/button
+
 ## [1.3.5](https://github.com/RanielliMontagna/rm_monorepo/compare/@rm-monorepo/button@1.3.4...@rm-monorepo/button@1.3.5) (2022-08-28)
 
 ### Bug Fixes
