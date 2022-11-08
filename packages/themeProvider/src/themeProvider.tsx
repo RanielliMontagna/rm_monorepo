@@ -5,7 +5,7 @@ import { defaultTheme } from './defaultTheme';
 
 import type { IThemeProvider } from './themeProvider.types';
 
-const ThemeProvider = ({ theme, children }: IThemeProvider) => {
+const ThemeProvider = ({ theme, muiTheme, children }: IThemeProvider) => {
   return (
     <StyledEngineProvider injectFirst>
       <ThemeProviderSC
@@ -14,7 +14,7 @@ const ThemeProvider = ({ theme, children }: IThemeProvider) => {
           ...theme,
         }}
       >
-        <ThemeProviderMui theme={createTheme()}>{children}</ThemeProviderMui>
+        <ThemeProviderMui theme={createTheme(muiTheme)}>{children}</ThemeProviderMui>
       </ThemeProviderSC>
     </StyledEngineProvider>
   );

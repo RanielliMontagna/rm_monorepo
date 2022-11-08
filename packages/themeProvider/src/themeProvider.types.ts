@@ -1,3 +1,4 @@
+import { ThemeOptions } from '@mui/material';
 import { PropsWithChildren } from 'react';
 
 export type IFontes = {
@@ -23,6 +24,7 @@ export interface ICoresUtilitarias {
 export type ICores = ICoresPrincipais | ICoresUtilitarias;
 export interface IThemeProvider
   extends PropsWithChildren<{
+    muiTheme?: ThemeOptions;
     theme?: {
       fontes?: IFontes;
       cores?: ICoresPrincipais;
