@@ -21,7 +21,16 @@ const Autocomplete = ({ name, defaultValue, rules, shouldUnregister, options, ..
           size="small"
           onChange={(_, values) => onChange(values)}
           options={options}
-          renderInput={(params) => <TextField {...params} {...rest} />}
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              {...rest}
+              InputProps={{
+                ...params.InputProps,
+                ...rest.InputProps,
+              }}
+            />
+          )}
         />
       )}
     />
