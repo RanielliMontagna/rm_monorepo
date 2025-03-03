@@ -35,7 +35,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-tsdoc": "^0.2.16",
-    "husky": "^8.0.1",
+    "husky": "^9.1.7",
     "jest": "^28.1.2",
     "jest-axe": "^6.0.0",
     "jest-environment-jsdom": "^28.1.2",
